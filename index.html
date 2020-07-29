@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Layout</title>
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo-webagency.png" alt="logo" class="logo">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+    <main>
+        <div class="CSSgal">
+
+            <!-- Don't wrap targets in parent -->
+            <s id="s1"></s> 
+            <s id="s2"></s>
+          
+            <div class="slider">
+              <div>
+                      <img src="images/banniere-1.jpg" alt="banniere1" class="width100">
+                  </div>
+              <div>
+                      <img src="images/banniere-2.jpg" alt="banniere2" class="width100">
+                  </div>
+             
+            </div>
+            
+            <div class="prevNext">
+              <div><a href="#s2"></a><a href="#s2"></a></div>
+              <div><a href="#s1"></a><a href="#s1"></a></div>
+            </div>
+          
+            <div class="bullets">
+              <a href="#s1">1</a>
+              <a href="#s2">2</a>
+            </div>
+          
+          </div>
+        
+        <!-- <div id="slider">
+            <figure>
+                <img src="images/banniere-1.jpg" alt>
+                <img src="images/banniere-2.jpg" alt>
+            </figure>
+        </div> -->
+        <section class="center">
+            <h1>WEBAGENCY : L'AGENCE DE TOUS VOS PROJETS !</h1>
+            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+            <h2>Nos services</h2>
+            <p>Agence web implanté à Paris , nous vous accompagnons dans la création <br> de sites internet et de supports de communication adaptés à <br>votre cible et à votre personnalité.</p>
+
+        </section>
+        <section>
+            <div class="flex">
+                <img src="images/projet-1-webdesign.jpg" alt="projet1" class="width">
+                <img src="images/projet-2-site-web.jpg" alt="projet2" class="width">
+                <img src="images/projet-3-design.jpg" alt="projet3" class="width">
+                <img src="images/projet-4-graphisme.jpg" alt="projet4" class="width">
+                <img src="images/projet-5-site-web.jpg" alt="projet5" class="width">
+                <img src="images/projet-6-webdesign.jpg" alt="projet6" class="width">
+                <img src="images/projet-7-logo.jpg" alt="projet7" class="width">
+                <img src="images/projet-8-graphisme.jpg" alt="projet8" class="width">
+                <img src="images/projet-5-site-web.jpg" alt="projet5" class="width">
+                <img src="images/projet-2-site-web.jpg" alt="projet2" class="width">
+            </div>
+        </section>
+        <section class="flex-desktop">
+            <article class="width-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10704.332186700562!2d1.9070975999999997!3d47.876719349999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e4fa99fad9d1%3A0x911c6afbc7c1bdfe!2sAFPA!5e0!3m2!1sfr!2sfr!4v1596007986671!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+            </article>
+            <article class="width-2">
+            
+                <form action="traitement.php" method="POST" class="formulaire">
+                    <p>
+                        <label for="nom"></label>
+                        <input type="text" name="nom" id="nom" placeholder="Nom" required class="width-lg">
+                    </p>
+                    <p>
+                        <label for="prenom"></label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required class="width-lg">
+                    </p>
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="E-Mail" required class="width-lg">
+                    </p>
+                    <p>
+                        <label for="number"></label>
+                        <input type="tel" name="number" id="number" placeholder="Numéro de téléphone" class="width-lg">
+                    </p>
+                    <p>
+                        <input type="submit" value="Envoyer">
+                        <input type="reset" value="Effacer" class="float-r">
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2020 ROLGEN Mickael</p>
+    </footer>        
+    
+    
+</body>
+</html>
